@@ -1,6 +1,6 @@
 use clap::Parser;
 
-use crate::docs::hello_world::{self, hello_world::hello_world};
+use crate::docs::ch01_02_hello_world::hello_world::hello_world;
 mod docs;
 
 #[derive(Parser, Debug)]
