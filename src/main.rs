@@ -1,6 +1,9 @@
 use clap::Parser;
 
-use crate::docs::ch01_02_hello_world::hello_world::hello_world;
+use crate::docs::{
+    ch01_02_hello_world::hello_world::hello_world,
+    ch02_00_guessing_game_tutorial::guessing_game::guessing_game,
+};
 mod docs;
 
 #[derive(Parser, Debug)]
@@ -16,6 +19,9 @@ fn main() {
     match args.args.as_str() {
         "hello_world" => {
             hello_world();
+        }
+        "guessing_game" => {
+            guessing_game();
         }
         _ => { //}
         }
