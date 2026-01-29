@@ -35,7 +35,7 @@ pub fn guessing_game() {
         };
         if number == bullet {
             println!("Yahh you been killed by bullet");
-            return;
+            break;
         }
         println!("Nope, try again!");
     }
