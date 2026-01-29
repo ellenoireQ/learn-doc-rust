@@ -3,6 +3,7 @@ use clap::Parser;
 use crate::docs::{
     ch01_02_hello_world::hello_world::hello_world,
     ch02_00_guessing_game_tutorial::guessing_game::guessing_game,
+    ch10_02_lifetime::lifetime::lifetime,
 };
 mod docs;
 
@@ -22,6 +23,9 @@ fn main() {
         }
         "guessing_game" => {
             guessing_game();
+        }
+        "lifetime" => {
+            lifetime();
         }
         _ => { //}
         }
