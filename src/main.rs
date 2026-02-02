@@ -1,7 +1,10 @@
 use clap::Parser;
 
 use crate::docs::{
-    ch01_02_hello_world::hello_world::hello_world, ch02_00_guessing_game_tutorial::guessing_game::guessing_game, ch08_01_vectors::vectors::vectors, ch10_02_lifetime::lifetime::lifetime
+    ch01_02_hello_world::hello_world::hello_world,
+    ch02_00_guessing_game_tutorial::guessing_game::guessing_game,
+    ch08_01_vectors::vectors::vectors, ch10_02_lifetime::lifetime::lifetime,
+    traits::traits::test_traits,
 };
 mod docs;
 
@@ -27,6 +30,9 @@ fn main() {
         }
         "vectors" => {
             vectors();
+        }
+        "traits" => {
+            test_traits();
         }
         _ => { //}
         }
